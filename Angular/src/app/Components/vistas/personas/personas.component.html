@@ -1,0 +1,36 @@
+<form [formGroup]="peopleForm" (ngSubmit)="onPeople(peopleForm.value)">
+    <div class="form-row">
+
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="ident" class="form-control" id="floatingInput" placeholder="Identificación">
+        <label for="floatingInput">Identificación</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="firstName" class="form-control" id="floatingInput" placeholder="Nombres">
+        <label for="floatingInput">Nombres</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="lastName" class="form-control" id="floatingInput" placeholder="Apellidos">
+        <label for="floatingInput">Apellidos</label>
+      </div>
+
+      <!-- <div class="form-group">
+        <label class="control-label" for="date">Fecha de nacimiento</label>
+        <input class="form-control" formControlName="dateBird" placeholder="MM/DD/YYY" type="text"/>
+      </div> -->
+
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="email" class="form-control" id="floatingInput" placeholder="Correo">
+        <label for="floatingInput">Correo</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="address" class="form-control" id="floatingInput" placeholder="Dirección">
+        <label for="floatingInput">Dirección</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </form>

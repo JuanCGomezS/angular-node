@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #1d2b36;
+
+  .header-img {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+    margin-right: 25px;
+  }
+.header-button {
+  background-color: transparent;
+  border: none;
+  margin-right: 24px;
+
+  .header-icon {
+    width: 30px !important;
+    height: 30px !important;
+
+  }
+}
+
+  .header-text {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+    margin-left: 35px;
+    font-size: xxx-large;
+    color: white;
+  }
+
+  .header-search {
+    width: 50%;
+    margin-right: 24px;
+  }
+
+  .aling-end {
+    margin-left: auto;
+  }
+}
