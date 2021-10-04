@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PersonasComponent } from './Components/vistas/personas/personas.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './Components/plantillas/menu/menu.component';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { MenuComponent } from './Components/plantillas/menu/menu.component';
     FooterComponent,
     routingComponents,
     PersonasComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,8 @@ import { MenuComponent } from './Components/plantillas/menu/menu.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

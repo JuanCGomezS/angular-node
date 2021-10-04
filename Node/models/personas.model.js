@@ -5,7 +5,10 @@ module.exports = (sequelize, Sequelize) => {
             primaryKey: true,
             autoIncrement: true 
         },
-        per_ident: {
+        per_type_identification: {
+            type: Sequelize.NUMBER
+        },
+        per_identification: {
             type: Sequelize.STRING
         },
         per_first_name: {
@@ -14,6 +17,9 @@ module.exports = (sequelize, Sequelize) => {
         per_last_name: {
             type: Sequelize.STRING
         },
+        per_gender: {
+            type: Sequelize.NUMBER
+        },
         per_email: {
             type: Sequelize.STRING
         },
@@ -21,6 +27,15 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.DATE
         },
         per_address: {
+            type: Sequelize.STRING
+        },
+        per_phone: {
+            type: Sequelize.NUMBER
+        },
+        per_city: {
+            type: Sequelize.NUMBER
+        },
+        per_status: {
             type: Sequelize.STRING
         }
     });
