@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
   active: boolean;
-
+  
   constructor() {}
 
   ngOnInit(): void {}

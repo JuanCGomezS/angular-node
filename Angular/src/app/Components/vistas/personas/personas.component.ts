@@ -7,7 +7,6 @@ import { ApiService } from '../../services/api.service';
 @Component({
   selector: 'app-personas',
   templateUrl: './personas.component.html',
-  styleUrls: ['./personas.component.scss'],
 })
 export class PersonasComponent implements OnInit {
   peopleForm: FormGroup;
