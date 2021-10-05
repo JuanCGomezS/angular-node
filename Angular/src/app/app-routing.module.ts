@@ -8,12 +8,29 @@ import { PrincipalComponent } from './Components/vistas/principal/principal.comp
 
 const routes: Routes =
 [
-  {path:'', redirectTo:'login', pathMatch:'full'},
-  {path:'login', component: LoginComponent },
-  {path:'principal', component: PrincipalComponent },
-  {path:'nuevo', component: NuevoComponent },
-  {path:'editar', component: EditarComponent },
-  {path:'personas', component: PersonasComponent }
+  {
+    path:'', redirectTo:'login', pathMatch:'full'
+  },
+  {
+    path:'login', 
+    component: LoginComponent 
+  },
+  {
+    path:'principal', 
+    component: PrincipalComponent 
+  },
+  {
+    path:'nuevo', 
+    component: NuevoComponent 
+  },
+  {
+    path:'editar', 
+    component: EditarComponent 
+  },
+  {
+    path:'personas', 
+    component: PersonasComponent
+   }
 ];
 
 @NgModule({

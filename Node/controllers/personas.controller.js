@@ -39,7 +39,7 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const id = req.params.id;
 
-    Persona.findByPk(id)
+    Persona.findByPk(Number(id))
         .then(data => {
             res.send(data);
         })
@@ -55,7 +55,7 @@ exports.update = (req, res) => {
     const id = req.params.id;
 
     Persona.update(req.body, {
-        where: { id: id }
+        where: { per_id: Number(id) }
     })
         .then(num => {
             if (num == 1) {
@@ -80,7 +80,7 @@ exports.delete = (req, res) => {
     const id = req.params.id;
 
     Persona.destroy({
-        where: { id: id }
+        where: { per_id: Number(id) }
     })
         .then(num => {
             if (num == 1) {
