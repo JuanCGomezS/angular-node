@@ -20,5 +20,7 @@ db.sequelize = sequelize;
 
 db.bodegas = require("./bodega.model.js")(sequelize, Sequelize);
 db.personas = require("./personas.model.js")(sequelize, Sequelize);
+db.basica_tabla = require("./basica_tabla.js")(sequelize, Sequelize);
+db.basica_tipo = require("./basica_tipo.js")(sequelize, Sequelize);
 
 module.exports = db;

@@ -26,6 +26,8 @@ app.get("/", (req, res) => {
 
 require("./routes/persona.routes")(app);
 require("./routes/bodega.routes")(app);
+require("./routes/basica_tabla.routes")(app);
+require("./routes/basica_tipo.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
